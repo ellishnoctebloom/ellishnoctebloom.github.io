@@ -3,81 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EH Noctebloom | Dark Fantasy Author</title>
+    <title>E H Noctebloom | Dark Fantasy Author</title>
     <style>
         body {
-            background-color: #0d0b0f; /* Matches the deep, dark purple-grey tones of your logo */
+            background-color: #050505;
             color: #d4d4d4;
             font-family: 'Georgia', serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             box-sizing: border-box;
             letter-spacing: 0.05em;
         }
         .container {
             text-align: center;
             max-width: 600px;
-            animation: fadeIn 2.5s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
         }
-        .logo {
+        .corporate-logo {
             max-width: 100%;
-            width: 450px; /* Expands the art so readers can appreciate the smoke texture */
+            width: 280px;
             height: auto;
             margin-bottom: 10px;
-            border-radius: 4px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-        }
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 300;
-            color: #ffffff;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
         }
         .staccato-text {
             font-size: 1.1rem;
             font-style: italic;
             color: #888888;
+            margin-top: 20px;
             margin-bottom: 40px;
             line-height: 1.8;
+            letter-spacing: 0.08em;
+        }
+        .button-matrix {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 50px;
         }
         .cta-btn {
             background-color: transparent;
-            color: #aaaaaa;
-            border: 1px solid #333333;
-            padding: 12px 30px;
+            color: #c5a880;
+            border: 1px solid #3a332a;
+            padding: 14px 35px;
             font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.25em;
             cursor: pointer;
             transition: all 0.5s ease;
             text-decoration: none;
+            width: 260px;
+            box-sizing: border-box;
+            border-radius: 2px;
         }
         .cta-btn:hover {
             color: #ffffff;
-            border-color: #ffffff;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border-color: #c5a880;
+            box-shadow: 0 0 20px rgba(197, 168, 128, 0.15);
+        }
+        .cta-btn.uncut {
+            color: #a33835; /* Dark, blood-crimson tone indicating transgressive/mature content */
+            border-color: #4a1918;
+        }
+        .cta-btn.uncut:hover {
+            color: #ffffff;
+            border-color: #a33835;
+            box-shadow: 0 0 20px rgba(163, 56, 53, 0.2);
+        }
+        .email-vault {
+            background-color: #0b0b0b;
+            border: 1px solid #141414;
+            padding: 30px;
+            margin-bottom: 60px;
+            border-radius: 4px;
+        }
+        .email-vault h3 {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .email-vault p {
+            font-size: 0.85rem;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        .email-form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .email-input {
+            background-color: #000000;
+            border: 1px solid #222222;
+            padding: 12px;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.9rem;
+            width: 60%;
+            border-radius: 2px;
+        }
+        .email-input:focus {
+            outline: none;
+            border-color: #c5a880;
+        }
+        .submit-btn {
+            background-color: #c5a880;
+            color: #050505;
+            border: none;
+            padding: 12px 20px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        .submit-btn:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .brand-footer {
+            border-top: 1px solid #141414;
+            padding-top: 30px;
+        }
+        .author-logo {
+            max-width: 100%;
+            width: 120px;
+            height: auto;
+            opacity: 0.4;
+            transition: opacity 0.8s ease;
+        }
+        .author-logo:hover {
+            opacity: 0.8;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        @media (max-width: 480px) {
+            .email-form { flex-direction: column; align-items: center; }
+            .email-input { width: 100%; }
+            .submit-btn { width: 100%; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Connects directly to your uploaded artwork -->
-        <img class="logo" src="logo.png" alt="Bulldog Hearth - EHN Emblem">
-        
-        <h1>Ellis H. Noctebloom</h1>
+        <!-- THE UMBRELLA IMPRINT: Parent company logo -->
+        <img class="corporate-logo" src="logo.png" alt="Author Logo">
         
         <p class="staccato-text">
             The ashes never settle. <br>
@@ -85,7 +169,28 @@
             The pursuit begins soon.
         </p>
 
-        <a href="https://www.royalroad.com/fiction/163768/the-butterflys-ruin" class="cta-btn">Enter the Hearth</a>
+        <!-- NAVIGATION MATRIX: Connects your two digital reading corridors -->
+        <div class="button-matrix">
+            <a href="https://royalroad.com" class="cta-btn">Enter the Hearth</a>
+            <a href="https://www.scribblehub.com/series/2294588/the-butterflys-ruin/" class="cta-btn uncut">The Uncut Path</a>
+        </div>
+
+        <!-- EMAIL COLLECTION VAULT: Captures direct subscriber data safely -->
+        <div class="email-vault">
+            <h3>Join the Anonymous Archive</h3>
+            <p>Receive notice before chapters are removed from public platforms.</p>
+            
+            <!-- Replace the action URL with your anonymous MailerLite/Stripe link later -->
+            <form class="email-form" action="#" method="POST">
+                <input type="email" class="email-input" placeholder="Enter your email address" required>
+                <button type="submit" class="submit-btn">Secure</button>
+            </form>
+        </div>
+
+        
+        <div class="brand-footer">
+            <img class="author-logo" src="bulldoglogo.png" alt="Corporate Sigil">
+        </div>
     </div>
 
 </body>
