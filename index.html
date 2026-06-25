@@ -178,10 +178,12 @@
         <!-- EMAIL COLLECTION VAULT: Captures direct subscriber data safely -->
         <div class="email-vault">
             <h3>Join the Anonymous Archive</h3>
-            <p>Receive notice before chapters are removed from public platforms.</p>
+            <p>Get notice before chapters are stubbed and my random musings.</p>
             
             <!-- Replace the action URL with your anonymous MailerLite/Stripe link later -->
-            <form class="email-form" action="https://assets.mailerlite.com/jsonp/2469765/forms/191235702667609964/subscribe" method="POST">
+            <form class="email-form" action="https://mailerlite.com" data-id="2469765" method="POST">
+                <input type="hidden" name="ml-submit" value="1">
+                <input type="hidden" name="valids[email]" value="">
                 <input type="email" class="email-input" placeholder="Enter your email address" required>
                 <button type="submit" class="submit-btn">Secure</button>
             </form>
