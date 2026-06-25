@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EH Noctebloom | Dark Fantasy Author</title>
+    <style>
+        body {
+            background-color: #0d0b0f; /* Matches the deep, dark purple-grey tones of your logo */
+            color: #d4d4d4;
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            letter-spacing: 0.05em;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .logo {
+            max-width: 100%;
+            width: 450px; /* Expands the art so readers can appreciate the smoke texture */
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+        .staccato-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #888888;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+        .cta-btn {
+            background-color: transparent;
+            color: #aaaaaa;
+            border: 1px solid #333333;
+            padding: 12px 30px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            text-decoration: none;
+        }
+        .cta-btn:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Connects directly to your uploaded artwork -->
+        <img class="logo" src="logo.png" alt="Bulldog Hearth - EHN Emblem">
+        
+        <h1>Ellis H. Noctebloom</h1>
+        
+        <p class="staccato-text">
+            The ashes never settle. <br>
+            A burden carried in total silence. <br>
+            The pursuit begins soon.
+        </p>
+
+        <a href="https://www.royalroad.com/fiction/163768/the-butterflys-ruin" class="cta-btn">Enter the Hearth</a>
+    </div>
+
+</body>
+</html>
